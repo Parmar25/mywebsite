@@ -1,0 +1,235 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Josefin Sans', sans-serif;}
+/* Navbar */
+@media only screen and (min-width:1268px)
+{  
+.subject {
+    width: 90%;
+    }    
+}
+
+@media only screen and (max-width:1268px){
+    .subject {
+        width: 90%;
+    } 
+    nav ul{
+        display: none;
+    } 
+    #hamburger-btn{
+        display: block;
+        color: black;
+    }
+    nav ul  {
+        width: 100%;
+        height: 100vh;
+        background-color: green;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+        display: block;
+    }
+}
+/*
+@media only screen and (max-width:1098px){
+    .about-us-img img{
+        width: 48%;
+    }
+    .subject {
+        width: 90%;
+    }  
+    .address{
+        margin-left: 21px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width:820px){
+    .navbar > .menu{
+        margin-left: 50px;
+    }
+    .about-us-img img{
+        width: 40%;
+    }
+    .subject {
+        width: 90%;
+    } 
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-container{
+        display: block;
+    }
+    .sign-up-form{
+        width: 60%;
+        margin-left: 175px;
+    }
+    .sign-btn{
+        margin-left: 34%;
+    }
+    .address{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    iframe{
+        text-align: center;
+        margin-left: 100px;
+    }
+}*/
+@media only screen and (max-width:768px){
+
+    #hamburger-btn{
+        display: block;
+        color: black;
+        margin-right: 200px;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .title{
+        margin-left: 130spx;
+        line-height: 20px;
+    }
+    nav .logo{
+        margin: 5px 50px;
+    }
+    .main-img{
+        margin-left: 152px;
+    }
+    .small-img{
+        margin-left: 140px;
+    }
+    header{
+        width: 860px;
+    }
+    nav ul  {
+        width: 100%;
+        height: 100vh;
+        background-color: green;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        transition: 0.5s ease-in-out;
+    }
+    nav ul a:hover{
+        color: white;
+        cursor: pointer;
+    }
+    nav ul {      
+        display: block;
+    }
+    .about-us-img{
+        flex-direction: column;
+    }
+    .about-us-img img{
+        width: 100%;
+    }
+    .card-container{
+        width: 82%;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-gap: 57px;
+        margin: 0rem 4.5rem;
+    }
+    .card-container .card{
+        margin: 24px 7px;
+    }
+    .contact-container{
+        display: block;
+        justify-content: center;
+    }
+    .sign-up-form{
+        width: 60%;
+        text-align: center;
+        margin-left: 170px;
+    }
+    .address{
+        margin-top: 50px;
+    }
+    .end-section{
+        display: flex;
+    }
+   iframe{
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 400px;
+    height: 300px;
+   }
+   .copyright{
+    padding-top: 17px;
+    font-size: 17px;
+   }
+}
+
+@media only screen and (max-width:450px){
+    nav .logo{
+        margin: 5px 24px;
+    }
+    nav h2{
+        margin: -50px 80px;
+    }
+    .icon{
+        display:block;
+        color: black;
+        margin-right: 230px;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0rem 2.5rem;
+    }
+    .contact-container{
+        width: 100%;
+        text-align: center;
+    }
+    .sign-up-form{
+        width: 70%;
+        margin-left: 74px;
+    }
+    .end-section{
+        display: block;
+    }
+    .address{
+        margin-right: 60px;
+    }
+    iframe{
+        margin-left: 1px;
+    }
+    .footer{
+        height: 75px;
+    }
+ }
+
+ @media only screen and (max-width:365px){
+    nav .logo{
+        margin: 5px 10px;
+        font-size: 22px;
+    }
+    nav h2{
+        margin: -50px 60px;
+        font-size: 22px;
+    }
+    .icon{
+        margin-right: 315px;
+        margin-top: 25px;
+    }
+    .card-container{
+        display: block;
+        width: 77%;
+    }
+    .sign-up-form{
+        width: 77%;
+        margin-left: 45px;
+    }
+    .address p{
+        font-size: 19px;
+    }
+    iframe{
+        width: 318px;
+        height: 236px;
+    }
+ }
+
+ 
