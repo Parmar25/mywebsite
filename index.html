@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Box ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Bootstrap Links--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Poppins:wght@500;600;700;800&family=Proza+Libre&family=Roboto:wght@300&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- Navbar start -->
+       <nav>
+
+          <img src="/images/Aayu Jivan Logo.png" class="logo">
+          <h2 class="title"><span class="title-aayu">Aayujivan</span> Aayurved</h2>
+        
+          <input type="checkbox" id="menu-toggle" name="" value="">
+          <label for="menu-toggle" id="hamburger-btn">
+              <i class="fa fa-bars icon" aria-hidden="true"></i> 
+          </label>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" target="_blank">About us</a></li>
+                <li><a href="#product" target="_blank">Product</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+
+            <div class="media-icon">
+            <i onclick="facebook()" class="fab fa-facebook-square" aria-hidden="true"></i>
+            <i onclick="instagram()" class="fab fa-instagram" aria-hidden="true"></i>
+            <i onclick="youtube()" class="fab fa-youtube" aria-hidden="true"></i>
+            </div>
+            
+       </nav>
+    <!-- Navbar end -->
+    </header>
+    <!--Mian Section Start-->
+   
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-section" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="./images/bg.jpg" class="d-block bg-img " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/about us.jpg" class="d-block bg-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/main.jpg" class="d-block bg-img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <!--Mian Section End-->
+    
+    <div class="product-container">
+        <h2>PRODUCT LIST</h2>
+        <div class="product-category-section">
+            <div class="category-title">Category</div>
+            <div class="categori-list">
+                <div class="body" onclick="bodyPain()">Body Pain</div>
+                <div class="hair">Hair Care</div>
+                <div class="skin">Skin Care</div>
+                <div class="stomach">Stomach Care</div>
+            </div>
+        </div>
+        <div class="listProduct">
+
+        </div>
+
+    </div>
+
+    <!--Contact Us Form-->
+    <section class="contact-us" id="contact">
+        <h2><span class="contact-title">Contact</span>Us</h2>
+        <div class="contact-container">
+            <!--Sign up Form -->
+                <div class="sign-up-form">
+                    <h1>Contact Form</h1>
+                        <form>
+                            <input type="text" id = "fname" class="input-box" placeholder="Enter Your First Name">
+                            <input type="text" id = "lname" class="input-box" placeholder="Enter Your Last Name">
+                            <input type="number" id = "mobile" class="input-box" placeholder="Enter Your Mobile Number">
+                            <textarea id="subject"  class="subject" placeholder="Write something.."></textarea>
+                            <button type="button" onclick="whatsapp()" class="sign-btn">Submit</button>
+                        </form> 
+                    <!--Java Script Start-->
+                                <script>
+                                    function whatsapp(){
+                                    var fname = document.getElementById("fname").value;
+                                    var lname = document.getElementById("lname").value;
+                                    var mobile = document.getElementById("mobile").value;
+                                    var subject = document.getElementById("subject").value;
+
+                                    var whatsappurl = "https://wa.me/918485994195?text="
+                                                    +"First Name of Customer : "+fname+"%0a"
+                                                    +"Last Name of Customer : "+lname+"%0a"
+                                                    +"Mobile Number : "+mobile+"%0a"
+                                                    +"subject : "+subject;
+                                    
+                                    window.open(whatsappurl,"_blank").focus();
+                                }
+                                
+                                    function facebook(){
+                                        
+                                        var fb = document.getElementsByClassName("fa-facebook-square");
+                                        var fburl = "https://www.facebook.com/groups/154210732961051";
+
+                                        window.open(fburl,"_blank").focus();
+                                    }
+
+                                    function instagram(){
+                                        var inst = document.getElementsByClassName("fab fa-instagram");
+                                        var insturl = "https://www.instagram.com/rajparmar_ayurvedic/?hl=en";
+
+                                        window.open(insturl,"_blank").focus();
+                                    }
+
+                                    function youtube(){
+                                        var youtube = document.getElementsByClassName("fab fa-youtube");
+                                        var youtubeurl = "https://www.youtube.com/@rajparmarayurvedicjivansha808";
+
+                                        window.open(youtubeurl,"_blank").focus();
+                                    }
+
+                                    function openwin(){
+                                        window.open("product.html");
+                                    }
+
+                                    function bodyPain(){
+                                        
+                                    }
+                                </script>
+                    <!--Java Script End-->
+                </div>
+        <div class="end-section">
+            <div class="address">
+                <h3>Address</h3>
+                <p>Aayu Jivan Aayurved<br>
+                   <br>2-Lati Plot ,<br>
+                   Near Ridhhi Sidhhi Pan,<br>
+                   Sanala Road,<br>
+                   Morbi - 363641<br>
+                   Gujarat<br>
+                <i class="fa fa-phone-square" aria-hidden="true"></i> +91 97 22 666 44 2
+                </p>
+            </div>
+            <!--Map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3677.716925242025!2d70.8237242753076!3d22.812950679321254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ4JzQ2LjYiTiA3MMKwNDknMzQuNyJF!5e0!3m2!1sen!2sin!4v1704367506075!5m2!1sen!2sin" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
+        </div>
+    </section>
+    <!--Footer Section-->
+    <div class="footer">
+        <p class="copyright">Copyright 2022-2023 by Aayu Jivan. All Rights Reserved</p>
+    </div>
+
+    
+
+    <script>
+        //Important note: If you have downloaded the code
+        // but still encounter errors when running the program,
+         //    please watch the video at this link because
+        // I have shown you how to run the project properly.
+        // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
+        let products = null;
+        // get datas from file json
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+        })
+
+        function addDataToHTML(){
+    // remove datas default from HTML
+        let listProductHTML = document.querySelector('.listProduct');
+
+        // add new datas
+        if(products != null) // if has data
+        {
+            products.forEach(product => {
+                let newProduct = document.createElement('a');
+                newProduct.href = '/detail.html?id=' + product.id;
+                newProduct.classList.add('item');
+                newProduct.innerHTML = 
+                `<img src="${product.image}" alt="">
+                <h2>${product.name}</h2>
+                <div class="price">Rs.${product.price}</div>
+                <div class="quentity">${product.quentity}</div>`;
+                listProductHTML.appendChild(newProduct);
+
+            });
+        }
+    }
+
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
