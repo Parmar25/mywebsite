@@ -39,7 +39,7 @@
         let products = null;
         
         // get datas from file json
-        fetch('products.json')
+        fetch('/jason/products.json')
             .then(response => response.json())
             .then(data => {
                 products = data;
@@ -67,7 +67,7 @@
 
         (products.filter(value => value.id != productId)).forEach(product => {
             let newProduct = document.createElement('a');
-            newProduct.href = 'detail.html?id=' + product.id;
+            newProduct.href = '/detail.html?id=' + product.id;
             newProduct.classList.add('item');
             newProduct.innerHTML = 
             `<img src="${product.image}" alt="">
