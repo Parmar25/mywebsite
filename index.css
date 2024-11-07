@@ -1,0 +1,475 @@
+*{padding: 0;margin: 0;box-sizing: border-box;font-family: 'Josefin Sans', sans-serif;}
+
+/* Navigation Section */
+nav .logo{
+    width: 70px;
+    height: 70px;
+    margin: 1px 25px;
+    text-align: center;
+    gap: 5px; 
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(239, 248, 241);
+    box-shadow: 0px 0px 20px black;
+}
+nav h2{
+    justify-content: center;
+    margin: -50px 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    text-align: center;
+    list-style: none;
+    padding: 20px 22px;
+    line-height: 6px;
+    margin-top: 8px;
+}
+nav ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background-color: green;
+    border-radius: 25px;
+}
+nav ul li:hover a{
+    color: white;
+}
+.title-aayu{
+    color: green;
+    margin-left: 25px;
+}
+.media-icon{
+    float: right;
+    margin-top: -55px;
+    margin-right: 100px;
+}
+.media-icon i{
+    margin-left: 40px;
+    font-size: 25px;
+    color: green;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+nav .media-icon i:hover{
+    transform: rotate(360deg);
+}
+
+/* Carousel Section */
+
+.carousel-inner{
+    position: relative;
+    top: 35px;
+    height: 80%;
+}
+.bg-img{
+    height: 75vh;
+    width: 98%;
+    margin-left: 20px;
+}
+
+/* Product Section */
+
+.product-container{
+    margin-top: 140px;
+}
+.product-container > h2{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.product-category-section{
+  
+    position: absolute;
+    border: 1px solid lightgrey;
+    width: 15%;
+    height: 50vh;
+    margin-left: 15px;
+  
+}
+.category-title{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.categori-list{
+    text-align: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor: pointer;
+}
+.categori-list .body:hover{
+    color: green;
+}
+.categori-list .hair:hover{
+    color: green;
+}
+.categori-list .skin:hover{
+    color: green;
+}
+.categori-list .stomach:hover{
+    color: green;
+}
+.listProduct{
+    width: 75%;
+    margin-left: 300px;
+}
+
+.product-intro{
+    text-align: center;
+}
+.product-intro h1{
+    color: green;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 30px 0px;
+}
+.product-intro h1 span{
+    color: black;   
+}
+.dropdown{
+    width: 220px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.product-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+}
+.categori-border{
+    width: 220px;
+    height: 500px;
+    margin: -45px 12px;
+    border: 1.5px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+.product-name{
+    padding-top: 10px;
+    color: black;
+}
+.card img{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 3px 0px 4px gray;
+    
+}
+.card p{
+    font-size: 20px;
+    color:rgb(78, 78, 78);
+    margin: 3px 3px;
+    font-weight: 400;
+}
+.card{
+    align-items: center ;
+    padding: 10px 10px;
+    border-width:0px !important;
+}
+.card h2{
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card:hover{
+    border: 2px solid black !important;
+    border-radius: 20px;
+}
+ 
+.buy-btn{
+    border: 3px solid green;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 40px;
+    border-radius: 40px;
+    font-weight: 300;
+    margin-top: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.buy-btn:hover {
+    cursor: pointer;
+    background-color: green;
+}
+.buy-btn a{
+    text-decoration: none ;
+    color: black;
+}
+.buy-btn:hover a{
+    color: white;
+}
+.about-us-img{
+    display: flex;
+    margin: 20px 20px;
+}
+.about-us-img img{
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px gray;
+}
+.para{
+    margin: 30px;
+    margin-left: 30px;
+    text-align: justify;
+    font-size: 25px;
+    
+}
+ .title-about{
+    color: green;
+    margin: 20px ;
+}
+.about-us h2{
+    text-align: center;
+    margin: 65px;
+    font-size: 30px;
+}
+.contact-title{
+    color: green;
+    margin: 20px ;
+}
+.contact-us h2{
+    text-align: center;
+    margin: 65px;
+    font-size: 30px;
+}
+
+/* Contact Form CSS*/
+.sign-up-form{
+    width: 30%;
+    background-color:rgba(83, 83, 83, 0.993);
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.contact-container{
+    display: flex;
+
+}
+.address{
+    margin-left: 60px;
+}
+.address h3{
+    font-size: 25px;
+    margin-left: 15px;
+}
+.address p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: rgb(63, 60, 60);
+}
+.address i{
+    font-size: 15px;
+}
+.sign-up-form:hover{
+    box-shadow: 3px 3px 7px gray
+}
+.sign-up-form h1{
+    text-align: center;
+    margin: 20px 0px;
+    padding: 20px;
+    color:rgb(86, 223, 23);
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px ;
+    margin: 10px 15px;
+    width: 90%;
+    border: 1px solid #999;
+    outline: none;
+}
+.subject{
+    width: 90%;
+    height: 100px;
+    margin: 10px 15px;
+    padding: 10px ;
+    border: 1px solid #999;
+    outline: none;
+
+}
+form button{
+    color: #fff;
+    width: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sign-btn{
+    background-color:rgb(61, 43, 226);
+    color: white;
+    width: 30%;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0px 15px;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(114, 111, 111);
+    margin-top: 10px;
+
+}
+.copyright{
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 15px;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#hamburger-btn{
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+    display: none;
+}
+#menu-toggle:checked ~ ul{
+    left: 0;
+}
+.end-section{
+    display: flex;
+    flex-direction: row;
+}
+/* New index css */
+.item-img{
+    width: 175px;
+    height: 175px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 3px 0px 4px gray;
+}
+.item-name{
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.item-quentity{
+    color:gray;
+    font-weight: 500;
+}
+.item-price{
+    color:gray;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn-add-cart{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 7px 15px;
+    border-radius: 28px;
+    cursor: pointer;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.btn-add-cart:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.btn-more-info{
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 60%;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 7px 15px;
+    border-radius: 28px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.btn-more-info:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+.items-container{
+    width: 95%;
+    margin: 50px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 20px;
+    color: green;
+}
+.cart-item-count{
+    background-color: green;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 3px 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 18px;
+    top: -55px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+a.action_container:link {
+    color:black;
+}
+
